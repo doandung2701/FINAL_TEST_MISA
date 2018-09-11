@@ -197,6 +197,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\accomplishment.png" />
     <Content Include="Content\Images\add16.png" />
+    <Content Include="Content\Images\app-icon.png" />
+    <Content Include="Content\Images\category.png" />
     <Content Include="Content\Images\close16.png" />
     <Content Include="Content\Images\contact.png" />
     <Content Include="Content\Images\delete-24.png" />
@@ -223,6 +225,7 @@
     <Content Include="Content\Images\salary.png" />
     <Content Include="Content\Images\save16.png" />
     <Content Include="Content\Images\saveadd16.png" />
+    <Content Include="Content\Images\search.png" />
     <Content Include="Content\Images\setting16.png" />
     <Content Include="Content\Images\sound16.png" />
     <Content Include="Content\Images\task.png" />
@@ -230,9 +233,11 @@
     <Content Include="Content\Images\utility.png" />
     <Content Include="Content\Images\utility16.png" />
     <Content Include="Content\Images\view16.png" />
+    <Content Include="CSS\headerCSS.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="index.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
