@@ -3,12 +3,17 @@
  	var name = 'div[tag=' + $(this).attr('name') + ']';
  	var thisDiv = $(name).css('display');
  	if($(this).attr("class") != 'sub-menu')
- 		$('.sub-menu').css("display",'none');
+         $('.sub-menu').css("display", 'none');
  	$(name).css('display',thisDiv);
- 	if(thisDiv == "none")
- 		$(name).show(200);
- 	else
- 		$(name).hide(200);
+     if (thisDiv == "none") {
+         $(name).show(200);
+         $(this).children('.sub-menu-icon').addClass('rowup');
+     }
+     else {
+         $(name).hide(200);
+         $(this).children('.sub-menu-icon').removeClass('rowup');
+     }
+   
  })
  $("div.right-menu-icon").click(function(){
  	var name = 'div.menu-text[subtext=' + $(this).attr("subtext") + ']';
@@ -44,4 +49,7 @@
  		$('.menu-text').css('display','none');
  		$('.menu-textt').css('display','none');
  	}
- })
+})
+$('#button-menu').click(function () {
+    $('.quan-left-menu').toggleClass('showleft');
+});

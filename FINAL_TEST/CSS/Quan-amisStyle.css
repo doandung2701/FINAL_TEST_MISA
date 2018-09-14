@@ -1,14 +1,21 @@
+
 .content{
-	
+ 	
 }
-	.content .quan-left-menu{
-		position: absolute;
-		left: 0;
-		top: 50px;
-		bottom: 0;
-		width: 230px;
-		background-color: #025f97;
-	}
+    .content .showleft{
+        width:0 !important;
+    }
+    .content .rowup {
+        background: url('../Content/Images/arr-up.png') no-repeat !important;
+    }
+    .content .quan-left-menu {
+        position: absolute;
+        left: 0;
+        top: 50px;
+        bottom: 0;
+        width: 230px;
+        background-color: #025f97;
+    }
 		.quan-left-menu > div{
 			display: flex;
 			border-top: 1px solid #3592ca;
@@ -124,16 +131,18 @@
 			.report, .category, .system{
 				background-position-x: 207px !important;
 			}
-	.menu-text{
-		display: none;	
-		position: absolute;
-		top: 54px;
-		left: 230px;
-		padding-left: 10px;
-		width: 330px;
-		line-height: 40px;	
-		bottom: 0;
-	}
+.menu-text {
+    display:none;
+    position: absolute;
+    top: 54px;
+    left: 230px;
+    padding-left: 10px;
+    width: 330px;
+    line-height: 40px;
+    bottom: 0;
+    box-shadow: 1px 0 3px #b0b0b0;
+    border-right: 1px solid #ddd;
+}
 	/* Report subtext - Begin */
 	.menu-textt{
 		display: flex;	
@@ -170,9 +179,9 @@
 		margin-left: 30px;
 		width: 260px;
 	}
-	.inline{
-		display: inline-flex;
-	}
+.content .inline {
+    display: inline-flex;
+}
 		.inline .right-inline{
 		}
 	div.menu-textt[subtext="category"]{
