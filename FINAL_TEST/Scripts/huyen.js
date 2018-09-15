@@ -87,13 +87,13 @@ drop.forEach(function(drop){
  var btn_resize=document.querySelector('.btn-resize');
  var down_container=document.querySelector('.down-container');
  var up_container=document.querySelector('.up-container');
- var table_height=document.querySelectorAll('.table-info-panel');
-
+    var table_height = document.querySelectorAll('.table-info-panel');
+    var body_container = document.querySelector('.body-container');
 
  btn_resize.addEventListener('click',function(){
  this.classList.toggle('trans');
  down_container.classList.toggle('height0');
- up_container.classList.toggle('height100')
+ body_container.classList.toggle('height100')
  table_height.forEach(
   function(table){
     table.classList.toggle('table-height');

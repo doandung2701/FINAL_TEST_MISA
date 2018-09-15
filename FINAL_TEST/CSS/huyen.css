@@ -93,6 +93,7 @@ table {
     left: 0;
     right: 0;
     bottom: 34px;
+    display: flex;
 }
 
 
@@ -100,11 +101,11 @@ table {
 
 
 .up-container {
-    height: auto;
-    width: 100%;
     position: absolute !important;
     top: 0;
-    bottom: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .content-container {
@@ -343,12 +344,12 @@ td {
 
 .right-panel {
     overflow: scroll;
-    position: absolute;
-    top: 0px;
-    right: 0;
-    left: 29%;
-    bottom: 0;
-    height: 100%;
+    /* position: absolute; */
+    /* top: 0px; */
+    /* right: 0; */
+    /* left: 29%; */
+    /* bottom: 0; */
+    /* height: 100%; */
 }
 
     .right-panel .table-info-panel {
@@ -378,11 +379,11 @@ td {
 
 
 .left-panel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* bottom: 0; */
+    /* overflow: hidden; */
 }
 
 
@@ -464,6 +465,8 @@ td {
     position: absolute;
     bottom: 0;
     width: 100%;
+    left: 0;
+    right: 0;
 }
 
     .trang-thai-container .icon-arr-down {
@@ -498,7 +501,7 @@ td {
 
         .down-container .catolo .list-catolo {
             overflow-x: scroll;
-            width: 990px;
+            width: 1196px;
             height: 43px;
         }
 
@@ -580,8 +583,8 @@ td {
     transform: rotate(180deg);
 }
 
-.up-container.height100 {
-    height: 100%;
+.height100 {
+    bottom: 0 !important;
 }
 
 .down-container.height0 {
