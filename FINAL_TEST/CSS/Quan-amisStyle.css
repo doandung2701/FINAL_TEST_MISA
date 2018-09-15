@@ -113,6 +113,8 @@
 			border-top: 1px solid #3592ca;
 			background-color: #025f97;
 			line-height: 35px;
+            z-index:1000000;
+            
 		}
 
 			.sub-menu div{
@@ -132,7 +134,7 @@
 				background-position-x: 207px !important;
 			}
 .menu-text {
-    display:none;
+    display: none;
     position: absolute;
     top: 54px;
     left: 230px;
@@ -142,6 +144,8 @@
     bottom: 0;
     box-shadow: 1px 0 3px #b0b0b0;
     border-right: 1px solid #ddd;
+    z-index: 10000000000;
+    background: #fff;
 }
 	/* Report subtext - Begin */
 	.menu-textt{
@@ -217,10 +221,12 @@
 
 div.menu-textt[subtext="report"],div.menu-textt[subtext="category"]{
 	display: none;
+    z-index:1000000;
 }
-div.menu-text[subtext="system"]{
-	display: none;
-	border-right: 1px solid #888888;
-	box-shadow: 4px 0 #f1f1f1;
-	line-height: 33px;
+div.menu-text[subtext="system"] {
+    display: none;
+    border-right: 1px solid #888888;
+    box-shadow: 4px 0 #f1f1f1;
+    line-height: 33px;
+    z-index: 1000000;
 }
