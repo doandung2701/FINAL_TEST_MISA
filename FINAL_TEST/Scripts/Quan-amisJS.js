@@ -52,4 +52,5 @@
 })
 $('#button-menu').click(function () {
     $('.quan-left-menu').toggleClass('showleft');
+    $('.content-container').toggleClass('full100');
 });

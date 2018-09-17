@@ -66,10 +66,8 @@
         background-repeat: no-repeat;
         min-width: 300px;
         max-width: 450px;
-        top: -16px;
+        bottom: 21px;
         padding: 0 0px 0 35px;
-        padding-bottom: -10px;
-        background-color: white;
         border: none;
         background-color: #0a5796;
         background-position-x: 12px;
@@ -77,20 +75,21 @@
     }
 
         .header .main-header #search #inputsearch {
-            width: 180%;
+            width: 150%;
             border: none;
             background: transparent;
             line-height: 28px;
             height: 20px;
             cursor: text;
             color: #fff;
-            padding-top: 9px !important;
             background-color: #0a5796;
             font-size: 13px;
             font-family: Helvetica,Tahoma,Arial,sans-serif !important;
             border-right-color: white;
             border-right: 1px solid;
             z-index: 1;
+            position: relative;
+            top: 2px;
         }
 
     .header .main-header #icon-setting {

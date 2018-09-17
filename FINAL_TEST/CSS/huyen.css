@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+.text {
+    font-weight: bold;
+}
+
+.m-col {
+    font-size: 14px;
+    width: 139px;
+}
+
+.m-row {
+    line-height: 1;
+    margin-top: 5px;
+    width: 98%;
+    height: 28px;
+}
+
+.innerCt input[type="text"] {
+    max-width: 70%;
+    width: auto;
+    height: 100%;
+    outline: none;
+}
+
+.innerCt {
+    display: flex;
+}
+
+.btn-drop {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+input[type="text"] {
+    outline: none;
+    height: 100%;
+    border: none;
+    background: transparent;
+}
+
+.btn-drop input[type="text"] {
+    width: 220px;
+}
+
+span.icon-tree {
+    width: 20px;
+    height: 20px;
+    background: url('/Content/Images/tree.png') no-repeat;
+}
+
+.dropdown-wrap {
+    height: 100%;
+    border-right: 1px solid #cfcfcf;
+    margin-left: 5px;
+}
+
+label {
+    height: 28px;
+}
+
+span.text-tool {
+}
+
+.table-left-container {
+    height: 100%;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+.table-info-panel {
+}
+
+
+.column-panel {
+    \: flex;
+    display: inline-flex;
+}
+
+.table-container {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 34px;
+    display: flex;
+}
+
+
+
+
+
+.up-container {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.content-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 230px;
+    top: 50px;
+}
+
+    .content-container .list-top-container {
+        position: absolute;
+        background: pink;
+        width: 100%;
+        height: 71px;
+        top: 0px;
+        left: 0;
+    }
+
+        .content-container .list-top-container .panel-title {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 37px;
+            top: 0;
+        }
+
+.icon-right::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('/Content/Images/arr-right.png');
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.panel-title .panel-title-left {
+    justify-items: center;
+    width: 670px;
+}
+
+.list-drop {
+    background: white;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    visibility: hidden;
+    opacity: 0;
+    right: 0;
+}
+
+.content-container .list-top-container .panel-tool {
+    margin-top: 37px;
+}
+
+
+
+/* het phan title va tool */
+
+.content-container .body-container {
+    position: absolute;
+    top: 80px;
+    left: 8px;
+    right: 0;
+    bottom: 40%;
+}
+
+td div.x-grid-cell-12 {
+    width: 114px;
+}
+
+.scroll-vertical {
+}
+
+.scroll-vertical {
+}
+
+.scroll-vertical-wrap {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    height: 28px;
+}
+
+.drop, .filter {
+    position: relative;
+    cursor: pointer;
+}
+
+hr {
+    transform: translate(15px,34px);
+    width: 99%;
+    /* left: 4px; */
+}
+
+span.trang-thai {
+    width: 147px;
+    margin-left: 12px;
+}
+
+span.trang-thai {
+}
+
+.btn-drop.top-department {
+    /* width:  291px; */
+}
+
+span.icon-right {
+    display: inline-block;
+}
+
+.icon-trigger {
+    float: right;
+    height: 16px;
+    width: 16px;
+    margin-left: 7px;
+    background: url('images/trigger.png') no-repeat;
+    background-position-y: 6px;
+}
+
+span.tool-icon.icon-sound16 {
+    background: url('/Content/Images/sound16.png') no-repeat;
+    background-position-y: -4px;
+}
+
+span.tool-icon.icon-sound16 {
+}
+
+span.tool-icon.icon-utility16 {
+    background: url('/Content/Images/utility16.png') no-repeat;
+}
+
+span.tool-icon.icon-print16 {
+    background: url('/Content/Images/print16.png') no-repeat;
+}
+
+.tool-icon {
+    /* margin-right:  10px; */
+    /* margin-left: 5px; */
+    float: left;
+    height: 16px;
+    width: 25px;
+    /* background:  lightblue; */
+}
+
+span.tool-icon.icon-question16 {
+    background: url('/Content/Images/question16.png') no-repeat;
+}
+
+span.tool-icon.icon-refresh16 {
+    background: url('/Content/Images/refresh16.png') no-repeat;
+}
+
+span.tool-icon.icon-email16 {
+    background: url('/Content/Images/email16.png') no-repeat;
+}
+
+span.tool-icon.icon-delete16 {
+    background: url('/Content/Images/delete16.png') no-repeat;
+}
+
+span.tool-icon.icon-view16 {
+    background: url('/Content/Images/view16.png') no-repeat;
+}
+
+span.tool-icon.icon-add16 {
+    background: url('/Content/Images/add16.png') no-repeat;
+}
+
+.tool-item {
+    cursor: pointer;
+    display: flex;
+    /* background: gray; */
+    margin: 5px;
+    padding: 3px;
+    align-items: center;
+}
+
+.icon-report16 {
+    background: url('/Content/Images/report16.png') no-repeat;
+}
+
+span.text-tool {
+    font-size: 16px;
+}
+
+span.text-tool {
+}
+
+.m-col.label {
+}
+
+.m-col.right-infor.flex {
+    width: 500px;
+}
+
+.m-col.left-infor.flex {
+    width: 500px;
+}
+
+.m-row {
+    display: flex;
+}
+
+.table-right-container {
+}
+
+
+td {
+    width: auto;
+    height: auto;
+    /* border:  1px solid #cfcfcf; */
+}
+
+    td div {
+        white-space: nowrap;
+        overflow: hidden;
+        min-width: 50px !important;
+        text-overflow: ellipsis;
+        height: 30px;
+        margin: 0;
+        border-right: 1px inset #cfcfcf;
+        border-bottom: 1px inset #cfcfcf;
+    }
+
+.up-container table {
+    border-collapse: collapse;
+}
+
+
+.right-panel {
+    overflow: scroll;
+    /* position: absolute; */
+    /* top: 0px; */
+    /* right: 0; */
+    /* left: 29%; */
+    /* bottom: 0; */
+    /* height: 100%; */
+}
+
+    .right-panel .table-info-panel {
+    }
+
+.table-header-panel {
+    float: left;
+    height: auto;
+    min-width: 50px !important;
+    display: inline-block;
+}
+
+    .table-header-panel div {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px inset #cfcfcf;
+    }
+
+    .table-header-panel .label {
+        background: #c1c1c1;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 5px;
+    }
+
+
+.left-panel {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* bottom: 0; */
+    /* overflow: hidden; */
+}
+
+
+
+
+
+.trang-thai-container {
+}
+
+
+
+.content-container .list-top-container {
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 71px;
+    top: 0px;
+    left: 0;
+}
+
+    .content-container .list-top-container .panel-title {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 37px;
+        top: 0;
+        align-items: center;
+    }
+
+.icon-right::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 23px;
+    background-image: url('/Content/Images/arr_right.png');
+    background-repeat: no-repeat;
+    color: black;
+    background-position-y: 10px;
+    /* padding: 3px; */
+}
+
+.panel-title .panel-title-left {
+    height: 100%;
+    width: 692px;
+    font-size: 18px;
+    border-right: 1px solid #cfcfcf;
+}
+
+.list-drop {
+    z-index: 9;
+}
+
+.filter .list-drop {
+    width: 100px;
+    /* opacity:  1; */
+    height: auto;
+}
+
+.list-drop.show-right {
+    left: 0;
+}
+
+.content-container .list-top-container .panel-tool {
+    margin-top: 37px;
+}
+
+.panel-tool {
+    display: flex;
+    height: 50%;
+    align-items: center;
+}
+
+
+
+/* het phan title va tool */
+
+
+.trang-thai-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+    .trang-thai-container .icon-arr-down {
+        background-image: url('/Content/Images/arr-down.png');
+        background-repeat: no-repeat;
+        background-position: 17px;
+        height: 11px;
+        width: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        border: 1px solid #cfcfcf;
+    }
+
+
+.down-container {
+    overflow: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+}
+
+    .down-container .catolo {
+        position: relative;
+        padding-top: 12px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #cfcfcf;
+        overflow-y: hidden;
+    }
+
+        .down-container .catolo .list-catolo {
+            overflow-x: scroll;
+            width: 1196px;
+            height: 43px;
+        }
+
+        .down-container .catolo ul {
+            width: 4700px;
+            height: 100%;
+            list-style: none;
+            display: inline-block;
+        }
+
+.icon-pre, .icon-next, .icon-3cham, .icon-setting16, .list-catolo {
+    float: left;
+}
+
+.down-container .catolo ul li {
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    display: inline;
+}
+
+    .down-container .catolo ul li a:hover {
+        color: blue !important;
+    }
+
+    .down-container .catolo ul li a {
+        color: black;
+        padding: 6px;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+.icon {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.icon-pre {
+    background: url('/Content/Images/pre.png') no-repeat;
+    background-position-x: 5px;
+}
+
+.icon-next {
+    background: url('/Content/Images/next.png') no-repeat;
+    background-position-x: 5px;
+}
+
+.icon-3cham {
+    background: url('/Content/Images/3cham.png') no-repeat;
+    background-position-y: 5px;
+}
+
+.icon-setting16 {
+    background: url('/Content/Images/setting16.png') no-repeat;
+}
+
+.catolo-active {
+    color: blue !important;
+}
+
+    .catolo-active::after {
+        position: absolute;
+        right: 30px;
+        top: 18px;
+        content: "";
+        width: 120px;
+        height: 2px;
+        background: blue;
+    }
+
+.list-drop.show_drop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn-resize.trans {
+    transform: rotate(180deg);
+}
+
+.height100 {
+    bottom: 0 !important;
+}
+
+.down-container.height0 {
+    display: none;
+}
+
+.table-info-panel.table-height {
+    height: 378px !important;
+}
+
+.table-left-container .table-info-panel {
+}
+
+table:nth-child(odd) {
+    background: #cfcfcf;
+    width: 100%;
+}
+
+table:nth-child(even) {
+    width: 100%;
+    background: white;
+}

@@ -227,6 +227,7 @@
     <Content Include="Content\Images\arr-down.png" />
     <Content Include="Content\Images\arr-right.png" />
     <Content Include="Content\Images\arr-up.png" />
+    <Content Include="Content\Images\avatar.png" />
     <Content Include="Content\Images\category.png" />
     <Content Include="Content\Images\close16.png" />
     <Content Include="Content\Images\contact.png" />
@@ -260,11 +261,13 @@
     <Content Include="Content\Images\task.png" />
     <Content Include="Content\Images\train.png" />
     <Content Include="Content\Images\tree-node-bg.png" />
+    <Content Include="Content\Images\tree.png" />
     <Content Include="Content\Images\utility.png" />
     <Content Include="Content\Images\utility16.png" />
     <Content Include="Content\Images\vietnam24.png" />
     <Content Include="Content\Images\view16.png" />
     <Content Include="CSS\headerCSS.css" />
+    <Content Include="CSS\huyen.css" />
     <Content Include="CSS\Quan-amisStyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -280,6 +283,7 @@
       <DependentUpon>EmployeeModel.edmx</DependentUpon>
       <LastGenOutput>EmployeeModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\huyen.js" />
     <Content Include="Scripts\Quan-amisJS.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
