@@ -1,0 +1,133 @@
+﻿
+<div class="addEmployee">
+    <div class="main-right">
+        <div class="main-right-head">
+            <div id="main-right-head-choosemenu">Hồ sơ</div>
+            <div id="main-right-head-icon"></div>
+            <div id="main-right-head-addtext">Thêm mới nhân viên</div>
+        </div>
+        <div class="main-right-head-toolbar">
+            <div class="btn" id="btnadd">
+                <div class="btnicon" id="btnadd-icon"></div>
+                <div id="main-right-head-toolbar-text">Cất</div>
+            </div>
+            <div class="btn" id="btnsaveadd">
+                <div class="btnicon" id="btnsaveadd-icon"></div>
+                <div id="main-right-head-toolbar-text">Cất và thêm</div>
+            </div>
+            <div class="btn" id="btndelay">
+                <div class="btnicon" id="btndelay-icon"></div>
+                <div id="main-right-head-toolbar-text">Hoãn</div>
+            </div>
+            <div class="btn" id="btnsetting">
+                <div class="btnicon" id="btnsetting-icon"></div>
+                <div id="main-right-head-toolbar-text">Thiết lập ngầm định</div>
+            </div>
+            <div class="seperator">|</div>
+            <div class="btn" id="btnhelp">
+                <div class="btnicon" id="btnhelp-icon"></div>
+                <div id="main-right-head-toolbar-text">Giúp</div>
+            </div>
+            <div class="btn" id="btncomment">
+                <div class="btnicon" id="btncomment-icon"></div>
+                <div id="main-right-head-toolbar-text">Phản hồi</div>
+            </div>
+            <div class="seperator">|</div>
+            <div class="btn" id="btnclose">
+                <div class="btnicon" id="btnclose-icon"></div>
+                <div id="main-right-head-toolbar-text">Đóng</div>
+            </div>
+
+        </div>
+        <div class="main-right-head-body">
+            <div class="main-right-head-body-table">
+                <div class="main-right-table-head">
+                    <div id="main-right-head-body-table-headtext">1. Thông tin chung</div>
+                    <div class="fancy"></div>
+                </div>
+                <div class="main-right-table-body">
+                    <div class="col1">
+                        <img src="/Content/Images/ImageHandler.png" class="user-image" alt="ảnh nhân viên">
+                        <div class="image-button">Chọn ảnh</div>
+                        <input type="file" accept="image/*" class="upload-avatar" />
+                    </div>
+                    <form style="display:flex" id="formADD">
+                        <div class="col2">
+                            <div class="col2-line">
+                                <div class="col2-text">
+                                    Mã nhân viên
+                                    <span class="required">(*)</span>
+                                </div>
+                                <input check="true" class="input-bar" type="text" id="staff-code" name="maNhanVien" />
+                            </div>
+                            <div class="col2-line">
+                                <div class="col2-text">Họ và đệm</div>
+                                <input class="input-bar" type="text" id="Firt-midname" />
+                            </div>
+                            <div class="col2-line">
+                                <div class="col2-text">Tên</div>
+                                <input class="input-bar" type="text" id="Lastname"/>
+                            </div>
+                            <div class="col2-line">
+                                <div class="col2-text">
+                                    Họ và tên
+                                    <span class="required">(*)</span>
+                                </div>
+                                <input check="true" class="input-bar" type="text" id="Fullname" name="hoVaTen"/>
+                            </div>
+                            <div class="col2-line">
+                                <div class="col2-text">Giới tính</div>
+                                <div class="wrapp input-bar">
+                                    <select id="GioiTinh" name="GioiTinh" style="
+    width: 100%;
+    border: none;
+    outline: none;
+">
+                                        <option selected="" value="Nam">Nam</option>
+                                        <option value="Nữ">Nữ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col2-line">
+                                <div class="col2-text">Ngày sinh</div>
+                                <div class="wrapp input-bar">
+                                    <input style="width:100%;border:none;outline:none" type="date" id="DateofBirth" name="NgaySinh" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="col3-line">
+                                <div class="col3-text">Địa chỉ</div>
+                                <textarea class="input-text" type="text" id="address"></textarea>
+                            </div>
+                            <div class="col3-line">
+                                <div class="col3-text">Điện thoại</div>
+                                <input class="input-text" type="text" id="telephone"/>
+                            </div>
+                            <div class="col3-line">
+                                <div class="col3-text">Email</div>
+                                <input class="input-text" type="email" id="email"/>
+                            </div>
+                            <div class="col3-line">
+                                <div class="col3-text">
+                                    Vị trí công việc
+                                    <span class="required">(*)</span>
+                                </div>
+                                <input check="true" class="input-text" type="text" id="work-position" name="ViTriCongViec"/>
+                            </div>
+                            <div class="col3-line">
+                                <div class="col3-text">
+                                    Đơn vị công tác
+                                    <span class="required">(*)</span>
+                                </div>
+                                <input check="true" class="input-text" type="text" id="OrganizationUnit" name="DonViCongTac"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

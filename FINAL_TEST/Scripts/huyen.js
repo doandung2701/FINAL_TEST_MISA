@@ -61,12 +61,10 @@ function(){
 
 // xu ly hien thi  cac drop-box
 var drop=document.querySelectorAll('.drop');
-console.log(drop);
 
 drop.forEach(function(drop){
 
   drop.addEventListener("click",function(){
-    console.log('click');
     
     var str_drop='.'+this.getAttribute('data-link');
     var class_drop=document.querySelector(str_drop);
@@ -148,8 +146,7 @@ Array.prototype.forEach.call(
         parent=th.parentNode;
         sibling=parent.nextElementSibling;
         parent=parent.parentNode;
-        console.log(child);
-        console.log(parent);
+
         off_table=sibling.offsetWidth-e.pageX;
         off_parent=parent.offsetWidth-e.pageX;
         off_current=th.offsetWidth-e.pageX;
@@ -179,7 +176,6 @@ document.addEventListener('mousemove', function (e) {
 
    
    down_container.style.height=491-up_container.offsetHeight+'px';
-   console.log(down_container.offsetHeight);
   }
 });
 

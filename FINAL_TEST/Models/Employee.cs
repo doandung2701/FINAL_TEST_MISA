@@ -11,21 +11,26 @@ namespace FINAL_TEST.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Employee
     {
-        public string MaNhanVien { get; set; }
+        [Key]
+        public int MaNhanVien { get; set; }
         public string HoVaTen { get; set; }
-        public bool GioiTinh { get; set; }
+        public string GioiTinh { get; set; }
+        [DataType(DataType.Date)]
         public System.DateTime NgaySinh { get; set; }
-        public string TrinhDo { get; set; }
+        public string TrinhDoDaoTao { get; set; }
         public string NoiDaoTao { get; set; }
         public string ChuyenNganh { get; set; }
-        public string ViTri { get; set; }
-        public string DonVi { get; set; }
+        public string ViTriCongViec { get; set; }
+        public string DonViCongTac { get; set; }
+        [DataType(DataType.Date)]
         public Nullable<System.DateTime> NgayThuViec { get; set; }
+        [DataType(DataType.Date)]
         public Nullable<System.DateTime> NgayChinhThuc { get; set; }
         public string LoaiHopDong { get; set; }
-        public bool TrangThai { get; set; }
+        public string TrangThai { get; set; }
     }
 }

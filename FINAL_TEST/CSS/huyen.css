@@ -25,6 +25,8 @@
     width: auto;
     height: 100%;
     outline: none;
+    background: none;
+    border: none;
 }
 
 .innerCt {
@@ -37,16 +39,11 @@
     align-items: center;
 }
 
-input[type="text"] {
-    outline: none;
-    height: 100%;
-    border: none;
-    background: transparent;
-}
 
-.btn-drop input[type="text"] {
-    width: 220px;
-}
+
+    .btn-drop input[type="text"] {
+        width: 220px;
+    }
 
 span.icon-tree {
     width: 20px;
@@ -114,6 +111,7 @@ table {
     bottom: 0;
     left: 230px;
     top: 50px;
+    overflow: scroll;
 }
 
     .content-container .list-top-container {

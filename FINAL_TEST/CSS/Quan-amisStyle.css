@@ -4,7 +4,10 @@
 
 .content {
 }
-
+.active-item {
+    background-color: #eda235;
+    border-color: #eda235;
+}
     .content .showleft {
         width: 0 !important;
     }
@@ -180,6 +183,11 @@
     padding-left: 10px;
     width: 520px;
     bottom: 0;
+    border-right: 1px solid rgb(136, 136, 136);
+    box-shadow: rgb(241, 241, 241) 4px 0px;
+    line-height: 33px;
+    z-index: 1000000;
+    background-color: #fff;
 }
 
 .left-menu-text > label, .right-menu-text > label {

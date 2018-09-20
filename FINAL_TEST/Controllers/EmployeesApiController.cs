@@ -15,17 +15,17 @@ namespace FINAL_TEST.Controllers
 {
     public class EmployeesApiController : ApiController
     {
-        private EmployeeModel db = new EmployeeModel();
+        private EmployeeModelEntities db = new EmployeeModelEntities();
 
-        // GET: api/Employees
+        // GET: api/EmployeesApi
         public IQueryable<Employee> GetEmployees()
         {
             return db.Employees;
         }
 
-        // GET: api/Employees/5
+        // GET: api/EmployeesApi/5
         [ResponseType(typeof(Employee))]
-        public async Task<IHttpActionResult> GetEmployee(string id)
+        public async Task<IHttpActionResult> GetEmployee(int id)
         {
             Employee employee = await db.Employees.FindAsync(id);
             if (employee == null)
@@ -36,9 +36,9 @@ namespace FINAL_TEST.Controllers
             return Ok(employee);
         }
 
-        // PUT: api/Employees/5
+        // PUT: api/EmployeesApi/5
         [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutEmployee(string id, Employee employee)
+        public async Task<IHttpActionResult> PutEmployee(int id, Employee employee)
         {
             if (!ModelState.IsValid)
             {
@@ -71,7 +71,7 @@ namespace FINAL_TEST.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Employees
+        // POST: api/EmployeesApi
         [ResponseType(typeof(Employee))]
         public async Task<IHttpActionResult> PostEmployee(Employee employee)
         {
@@ -101,9 +101,9 @@ namespace FINAL_TEST.Controllers
             return CreatedAtRoute("DefaultApi", new { id = employee.MaNhanVien }, employee);
         }
 
-        // DELETE: api/Employees/5
+        // DELETE: api/EmployeesApi/5
         [ResponseType(typeof(Employee))]
-        public async Task<IHttpActionResult> DeleteEmployee(string id)
+        public async Task<IHttpActionResult> DeleteEmployee(int id)
         {
             Employee employee = await db.Employees.FindAsync(id);
             if (employee == null)
@@ -126,7 +126,7 @@ namespace FINAL_TEST.Controllers
             base.Dispose(disposing);
         }
 
-        private bool EmployeeExists(string id)
+        private bool EmployeeExists(int id)
         {
             return db.Employees.Count(e => e.MaNhanVien == id) > 0;
         }

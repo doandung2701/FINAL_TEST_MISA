@@ -191,30 +191,35 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\EmployeesApiController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Employee.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee.Context.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Employee.cs">
-      <DependentUpon>EmployeeModel.tt</DependentUpon>
+      <DependentUpon>Employee.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\EmployeeModel.Context.cs">
+    <Compile Include="Models\Employee.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeModel.Context.tt</DependentUpon>
+      <DependentUpon>Employee.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\EmployeeModel.cs">
+    <Compile Include="Models\Employee1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EmployeeModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeModel.edmx</DependentUpon>
+      <DependentUpon>Employee.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\EmployeeModel.mdf" />
+    <Content Include="App_Data\EmployeeModel_log.ldf">
+      <DependentUpon>EmployeeModel.mdf</DependentUpon>
+    </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -273,16 +278,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
-    <Content Include="Models\EmployeeModel.Context.tt">
+    <Content Include="Models\Employee.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EmployeeModel.edmx</DependentUpon>
-      <LastGenOutput>EmployeeModel.Context.cs</LastGenOutput>
+      <DependentUpon>Employee.edmx</DependentUpon>
+      <LastGenOutput>Employee.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\EmployeeModel.tt">
+    <Content Include="Models\Employee.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EmployeeModel.edmx</DependentUpon>
-      <LastGenOutput>EmployeeModel.cs</LastGenOutput>
+      <DependentUpon>Employee.edmx</DependentUpon>
+      <LastGenOutput>Employee1.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\action.js" />
+    <Content Include="Scripts\AddEmployee.js" />
     <Content Include="Scripts\huyen.js" />
     <Content Include="Scripts\Quan-amisJS.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -309,12 +316,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="Models\EmployeeModel.edmx">
+    <EntityDeploy Include="Models\Employee.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EmployeeModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>Employee.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\EmployeeModel.edmx.diagram">
-      <DependentUpon>EmployeeModel.edmx</DependentUpon>
+    <Content Include="Models\Employee.edmx.diagram">
+      <DependentUpon>Employee.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -336,10 +343,15 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\Employees\AddEmployee.cshtml" />
+    <Content Include="Views\Employees\AllEmployee.cshtml" />
+    <Content Include="Views\Test\Create.cshtml" />
+    <Content Include="Views\Test\Delete.cshtml" />
+    <Content Include="Views\Test\Details.cshtml" />
+    <Content Include="Views\Test\Edit.cshtml" />
+    <Content Include="Views\Test\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
   </ItemGroup>

@@ -13,5 +13,13 @@ namespace FINAL_TEST.Controllers
         {
             return View();
         }
+        public ActionResult AddEmployee()
+        {
+            return PartialView("AddEmployee");
+        }
+        public ActionResult AllEmployee()
+        {
+            return PartialView("AllEmployee");
+        }
     }
 }

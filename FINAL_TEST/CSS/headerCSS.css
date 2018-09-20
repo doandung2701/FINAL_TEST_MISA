@@ -168,3 +168,259 @@
     padding-left: 30px;
     font-size: 20px;
 }
+
+.addEmployee {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 230px;
+    top: 50px;
+}
+
+    .addEmployee .main-right {
+    }
+
+    .addEmployee .main-right-head {
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        line-height: 34px;
+        font-size: 20px;
+    }
+
+    .addEmployee #main-right-head-choosemenu {
+        text-decoration: none;
+        color: #0277bd;
+    }
+
+    .addEmployee #main-right-head-icon {
+        background: transparent url('https://cdnamis2.amis.vn/AMISHRM2/Content/Master/image/arr_right.png?v=sa1bF5pkPc03qeYdWQDxRg6opEg=') center center no-repeat;
+        width: 16px;
+        height: 16px;
+        margin: 0 0 -2px 6px;
+    }
+
+    .addEmployee #main-right-head-addtext {
+        margin-left: 3px;
+    }
+
+    .addEmployee .main-right-head-toolbar {
+        padding-left: 10px;
+        height: 30px;
+        width: calc(100% - 10px);
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #D9D9D9;
+        border-top: 1px solid #D9D9D9;
+        box-shadow: 0px 5px #E8E8ED;
+    }
+
+    .addEmployee .btn {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+        .addEmployee .btn:hover {
+            background-color: #CFF0FB;
+        }
+
+    .addEmployee #main-right-head-toolbar-text {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+
+    .addEmployee .seperator {
+        font-size: 28px;
+        margin-left: -10px;
+        margin-right: 7px;
+        color: #D9D9D9;
+        margin-top: -4px;
+    }
+
+    .addEmployee .btnicon {
+        background-size: 14px 14px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .addEmployee #btnadd-icon {
+        background-image: url('../Content/Images/save16.png');
+    }
+
+    .addEmployee #btnsaveadd-icon {
+        background-image: url('../Content/Images/saveadd16.png');
+    }
+
+    .addEmployee #btndelay-icon {
+        background-image: url('../Content/Images/reject16.png');
+    }
+
+    .addEmployee #btnsetting-icon {
+        background-image: url('../Content/Images/setting16.png');
+    }
+
+    .addEmployee #btnhelp-icon {
+        background-image: url('../Content/Images/question16.png');
+    }
+
+    .addEmployee #btncomment-icon {
+        background-image: url('../Content/Images/sound16.png');
+    }
+
+    .addEmployee #btnclose-icon {
+        background-image: url('../Content/Images/close16.png');
+    }
+
+
+    .addEmployee .main-right-head-body {
+        margin: 12px 10px 5px 10px;
+        -webkit-box-shadow: 0 0 5px 2px #E8E8ED;
+        -moz-box-shadow: 0 0 5px 2px #E8E8ED;
+        box-shadow: 0 0 5px 2px #E8E8ED;
+        border-radius: 3px;
+    }
+
+    .addEmployee .main-right-head-body-table {
+        padding: 10px;
+        padding-top: 20px;
+        align-items: center;
+    }
+
+    .addEmployee .main-right-table-head {
+        width: 100%;
+        display: flex;
+    }
+
+    .addEmployee #main-right-head-body-table-headtext {
+        font-size: 18px;
+        width: 147px;
+        color: #0C68B5;
+    }
+
+    .addEmployee .fancy {
+        background: transparent url('https://cdnamis2.amis.vn/AMISHRM2/Content/View/Employee/UcDetail/image/panel-header-bg.png?v=sa1bF5pkPc03qeYdWQDxRg6opEg=') repeat 0 center;
+        height: 1px;
+        margin-top: 12px;
+        width: calc(100% - 160px);
+    }
+
+    .addEmployee .main-right-table-body {
+        margin-top: 5px;
+        display: flex;
+    }
+
+    .addEmployee .col1 {
+        width: 120px;
+    }
+
+    .addEmployee .user-image {
+        position: relative;
+        z-index: 1;
+    }
+
+    .addEmployee .image-button {
+        position: relative;
+        z-index: 2;
+        margin-top: -33px;
+        line-height: 25px;
+        text-align: center;
+        width: 100%;
+        color: white;
+        font-size: 14px;
+        background-color: #757879;
+        border: 1px solid #757879;
+        cursor: pointer;
+    }
+
+    .addEmployee .upload-avatar {
+        display: none;
+    }
+
+    .addEmployee .col2 {
+        width: 440px;
+        line-height: 32px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .addEmployee .col2-line {
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .addEmployee .col2-text {
+        width: 110px;
+        margin-right: 5px;
+    }
+
+    .addEmployee .required {
+        color: red;
+        padding-left: 4px;
+    }
+
+    .addEmployee .input-bar {
+        width: 320px;
+        padding-left: 5px;
+        padding-right: 3px;
+        border-radius: 3px;
+        border: 1px solid #D9D9D9;
+        height: 38px;
+    }
+
+        .addEmployee .input-bar:focus {
+            border: 1px solid blue;
+        }
+
+    .addEmployee #Gender {
+        width: 334px;
+    }
+
+    .addEmployee .col3 {
+        width: 100%;
+    }
+
+    .addEmployee .col3-line {
+        max-width: 100%;
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: 32px;
+    }
+
+    .addEmployee .col3-text {
+        width: 120px;
+    }
+
+    .addEmployee #address {
+        height: 52px;
+        resize: none;
+        padding: 5px;
+    }
+
+    .addEmployee .input-text, input {
+        width: 325px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 3px;
+        border: 1px solid #D9D9D9;
+    }
+
+    .addEmployee .input-text {
+        width: 340px;
+        height: 38px;
+    }
+
+        .addEmployee .input-text:focus {
+            border: 1px solid blue;
+        }
+
+    .addEmployee .Checkerror {
+        border: 1px solid red;
+    }
