@@ -289,7 +289,6 @@
     </Content>
     <Content Include="Scripts\action.js" />
     <Content Include="Scripts\AddEmployee.js" />
-    <Content Include="Scripts\EditEmployee.js" />
     <Content Include="Scripts\huyen.js" />
     <Content Include="Scripts\Quan-amisJS.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -345,7 +344,6 @@
     <Content Include="Views\Employees\Index.cshtml" />
     <Content Include="Views\Employees\AddEmployee.cshtml" />
     <Content Include="Views\Employees\AllEmployee.cshtml" />
-    <Content Include="Views\Employees\EditEmployee.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

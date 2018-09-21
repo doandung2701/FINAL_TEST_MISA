@@ -19,10 +19,6 @@ namespace FINAL_TEST.Controllers
         {
             return PartialView("AddEmployee");
         }
-        public ActionResult EditEmployee()
-        {
-            return PartialView("EditEmployee");
-        }
         public ActionResult AllEmployee()
         {
             return PartialView(db.Employees);
