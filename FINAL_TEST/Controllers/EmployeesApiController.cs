@@ -35,7 +35,14 @@ namespace FINAL_TEST.Controllers
 
             return Ok(employee);
         }
-
+        [HttpGet]
+        [Route("api/Emp/{id}/{staff_code_string}")]
+        public Employee PostEmployee(int id, String staff_code_string)
+        {
+            var staff_code = System.Convert.ToInt32(staff_code_string);
+            var result = db.Employees.Where(x => x.MaNhanVien == staff_code).SingleOrDefault();
+            return result;
+        }
         // PUT: api/EmployeesApi/5
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutEmployee(int id, Employee employee)
@@ -75,6 +82,7 @@ namespace FINAL_TEST.Controllers
         [ResponseType(typeof(Employee))]
         public async Task<IHttpActionResult> PostEmployee(Employee employee)
         {
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -100,6 +108,7 @@ namespace FINAL_TEST.Controllers
 
             return CreatedAtRoute("DefaultApi", new { id = employee.MaNhanVien }, employee);
         }
+        
 
         // DELETE: api/EmployeesApi/5
         [ResponseType(typeof(Employee))]
