@@ -122,7 +122,7 @@
     </div>
     <!-- het list-top-container -->
     <div class="body-container">
-        <div class="up-container" style="position:absolute">
+        <div class="up-container">
             <div class="table-container">
                 <div class="left-panel">
 
@@ -200,24 +200,24 @@
 
                         <div class="table-info-panel">
                             <div class="scroll">
-
-                                <table id="tableview-1091-record-106" class="x-grid-item x-grid-item-selected tableWide-wrapper">
-                                    <tbody>
-                                        @foreach (var item in Model)
-                                        {
-                                            <tr>
-                                                <td class="x-grid-row">
+                                @foreach (var item in Model)
+                                {
+                                    <table id="@Html.DisplayFor(modelItem => item.MaNhanVien)" class="x-grid-item x-grid-item-selected">
+                                        <tbody>
+                                            <tr class="  x-grid-row">
+                                                <td class="x-grid-td">
                                                     <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.MaNhanVien)</div>
                                                 </td>
-                                                <td class="x-grid-row">
-                                                    <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.HoVaTen)</div>
+
+                                                <td class="x-grid-td">
+                                                    <div class="x-grid-cell-1">@Html.DisplayFor(modelItem => item.HoVaTen)</div>
                                                 </td>
-
                                             </tr>
-                                        }
+                                        </tbody>
+                                    </table>
+                                  
+                                }
 
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
 
@@ -226,537 +226,541 @@
                 </div>
                 <div class="right-panel">
 
-                    <div class="table-left-container">
+                    <div class="table-right-container">
+                        <div class="scroll-vertical-wrap">
+                            <div class="scroll-vertical scr-vertical">
+                                <div class="column-panel">
+                                    <div class="table-header-panel resize">
+                                        <div class="label">Giới tính</div>
+                                        <div class="innerCt">
+                                            <div class=" filter drop " data-link="list5">
+                                                <div class="btn-drop ">
+                                                    <span class="">*</span>
+                                                </div>
+                                                <div class="list5 show-right list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
 
-                        <div class="column-panel">
-                            <div class="table-header-panel resize">
-                                <div class="label">Giới tính</div>
-                                <div class="innerCt">
-                                    <div class=" filter drop " data-link="list5">
-                                        <div class="btn-drop ">
-                                            <span class="">*</span>
-                                        </div>
-                                        <div class="list5 show-right list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="" id="" value="">
+                                            <div class=" filter drop" data-link="list6">
+                                                <div class="btn-drop ">
+                                                    <span class="icon-trigger"></span>
+                                                </div>
+                                                <div class="list6 list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
 
-                                            </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <input type="text" name="" id="" value="">
-                                    <div class=" filter drop" data-link="list6">
-                                        <div class="btn-drop ">
-                                            <span class="icon-trigger"></span>
-                                        </div>
-                                        <div class="list6 list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
+                                    <div class="table-header-panel resize">
+                                        <div class="label">Ngày sinh</div>
+                                        <div class="innerCt">
+                                            <div class=" filter drop" data-link="list7">
+                                                <div class="btn-drop ">
+                                                    <span class="">*</span>
+                                                </div>
+                                                <div class="list7 show-right list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
 
-                                            </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="" id="" value="">
+                                            <div class=" filter drop" data-link="list8">
+                                                <div class="btn-drop ">
+                                                    <span class="icon-trigger"></span>
+                                                </div>
+                                                <div class="list8 list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="table-header-panel resize">
+                                        <div class="label">Trình độ đào tạo</div>
+                                        <div class="innerCt">
+                                            <div class=" filter drop" data-link="list9">
+                                                <div class="btn-drop ">
+                                                    <span class="">*</span>
+                                                </div>
+                                                <div class="list9 show-right list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="" id="" value="">
+                                            <div class=" filter drop" data-link="list10">
+                                                <div class="btn-drop ">
+                                                    <span class="icon-trigger"></span>
+                                                </div>
+                                                <div class="list10 list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-header-panel resize">
+                                        <div class="label"> Nơi đào tạo</div>
+                                        <div class="innerCt">
+                                            <div class=" filter drop" data-link="list11">
+                                                <div class="btn-drop ">
+                                                    <span class="">*</span>
+                                                </div>
+                                                <div class="list11 show-right list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="" id="" value="">
+                                            <div class=" filter drop " data-link="list12">
+                                                <div class="btn-drop ">
+                                                    <span class="icon-trigger"></span>
+                                                </div>
+                                                <div class="list12 list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-header-panel resize">
+                                        <div class="label"> Chuyên ngành</div>
+                                        <div class="innerCt">
+                                            <div class=" filter drop" data-link="list13">
+                                                <div class="btn-drop ">
+                                                    <span class="">*</span>
+                                                </div>
+                                                <div class="list13 show-right list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="" id="" value="">
+                                            <div class=" filter drop" data-link="list14">
+                                                <div class="btn-drop ">
+                                                    <span class="icon-trigger"></span>
+                                                </div>
+                                                <div class="list14 list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-header-panel resize">
+                                        <div class="label"> Vị trí công việc</div>
+                                        <div class="innerCt">
+                                            <div class=" filter drop " data-link="list15">
+                                                <div class="btn-drop ">
+                                                    <span class="">*</span>
+                                                </div>
+                                                <div class="list15 show-right list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="" id="" value="">
+                                            <div class=" filter drop " data-link="list16">
+                                                <div class="btn-drop ">
+                                                    <span class="icon-trigger"></span>
+                                                </div>
+                                                <div class="list16 list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-header-panel resize">
+                                        <div class="label"> Đơn vị công tác</div>
+                                        <div class="innerCt">
+                                            <div class=" filter drop " data-link="list17">
+                                                <div class="btn-drop ">
+                                                    <span class="">*</span>
+                                                </div>
+                                                <div class="list17 show-right list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="" id="" value="">
+                                            <div class=" filter drop" data-link="list18">
+                                                <div class="btn-drop ">
+                                                    <span class="icon-trigger"></span>
+                                                </div>
+                                                <div class="list18 list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-header-panel">
+                                        <div class="label">Ngày thử việc</div>
+                                        <div class="innerCt">
+                                            <div class=" filter drop" data-link="list19">
+                                                <div class="btn-drop ">
+                                                    <span class="">*</span>
+                                                </div>
+                                                <div class="list19 show-right list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="" id="" value="">
+                                            <div class=" filter drop" data-link="list20">
+                                                <div class="btn-drop ">
+                                                    <span class="icon-trigger"></span>
+                                                </div>
+                                                <div class="list20 list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-header-panel resize">
+                                        <div class="label">Ngày chính thức</div>
+                                        <div class="innerCt">
+                                            <div class=" filter drop " data-link="list21">
+                                                <div class="btn-drop ">
+                                                    <span class="">*</span>
+                                                </div>
+                                                <div class="list21 show-right list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="" id="" value="">
+                                            <div class=" filter drop " data-link="list22">
+                                                <div class="btn-drop ">
+                                                    <span class="icon-trigger"></span>
+                                                </div>
+                                                <div class="list22 list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-header-panel resize">
+                                        <div class="label">Loại hợp đồng</div>
+                                        <div class="innerCt">
+                                            <div class=" filter drop " data-link="lists23">
+                                                <div class="btn-drop ">
+                                                    <span class="">*</span>
+                                                </div>
+                                                <div class="lists23 show-right list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="" id="" value="">
+                                            <div class=" filter drop" data-link="list24">
+                                                <div class="btn-drop ">
+                                                    <span class="icon-trigger"></span>
+                                                </div>
+                                                <div class="list24 list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-header-panel resize">
+                                        <div class="label">Trạng thái</div>
+                                        <div class="innerCt">
+                                            <div class=" filter drop " data-link="lists25">
+                                                <div class="btn-drop ">
+                                                    <span class="">*</span>
+                                                </div>
+                                                <div class="lists25 show-right list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="" id="" value="">
+                                            <div class=" filter drop" data-link="list26">
+                                                <div class="btn-drop ">
+                                                    <span class="icon-trigger"></span>
+                                                </div>
+                                                <div class="list26 list-drop">
+                                                    <ul>
+                                                        <li>list1</li>
+                                                        <li>list2</li>
+                                                        <li>list3</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="table-header-panel resize">
-                                <div class="label">Ngày sinh</div>
-                                <div class="innerCt">
-                                    <div class=" filter drop" data-link="list7">
-                                        <div class="btn-drop ">
-                                            <span class="">*</span>
-                                        </div>
-                                        <div class="list7 show-right list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <input type="text" name="" id="" value="">
-                                    <div class=" filter drop" data-link="list8">
-                                        <div class="btn-drop ">
-                                            <span class="icon-trigger"></span>
-                                        </div>
-                                        <div class="list8 list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table-header-panel resize">
-                                <div class="label">Trình độ đào tạo</div>
-                                <div class="innerCt">
-                                    <div class=" filter drop" data-link="list9">
-                                        <div class="btn-drop ">
-                                            <span class="">*</span>
-                                        </div>
-                                        <div class="list9 show-right list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <input type="text" name="" id="" value="">
-                                    <div class=" filter drop" data-link="list10">
-                                        <div class="btn-drop ">
-                                            <span class="icon-trigger"></span>
-                                        </div>
-                                        <div class="list10 list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table-header-panel resize">
-                                <div class="label"> Nơi đào tạo</div>
-                                <div class="innerCt">
-                                    <div class=" filter drop" data-link="list11">
-                                        <div class="btn-drop ">
-                                            <span class="">*</span>
-                                        </div>
-                                        <div class="list11 show-right list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <input type="text" name="" id="" value="">
-                                    <div class=" filter drop " data-link="list12">
-                                        <div class="btn-drop ">
-                                            <span class="icon-trigger"></span>
-                                        </div>
-                                        <div class="list12 list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table-header-panel resize">
-                                <div class="label"> Chuyên ngành</div>
-                                <div class="innerCt">
-                                    <div class=" filter drop" data-link="list13">
-                                        <div class="btn-drop ">
-                                            <span class="">*</span>
-                                        </div>
-                                        <div class="list13 show-right list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <input type="text" name="" id="" value="">
-                                    <div class=" filter drop" data-link="list14">
-                                        <div class="btn-drop ">
-                                            <span class="icon-trigger"></span>
-                                        </div>
-                                        <div class="list14 list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table-header-panel resize">
-                                <div class="label"> Vị trí công việc</div>
-                                <div class="innerCt">
-                                    <div class=" filter drop " data-link="list15">
-                                        <div class="btn-drop ">
-                                            <span class="">*</span>
-                                        </div>
-                                        <div class="list15 show-right list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <input type="text" name="" id="" value="">
-                                    <div class=" filter drop " data-link="list16">
-                                        <div class="btn-drop ">
-                                            <span class="icon-trigger"></span>
-                                        </div>
-                                        <div class="list16 list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table-header-panel resize">
-                                <div class="label"> Đơn vị công tác</div>
-                                <div class="innerCt">
-                                    <div class=" filter drop " data-link="list17">
-                                        <div class="btn-drop ">
-                                            <span class="">*</span>
-                                        </div>
-                                        <div class="list17 show-right list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <input type="text" name="" id="" value="">
-                                    <div class=" filter drop" data-link="list18">
-                                        <div class="btn-drop ">
-                                            <span class="icon-trigger"></span>
-                                        </div>
-                                        <div class="list18 list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table-header-panel">
-                                <div class="label">Ngày thử việc</div>
-                                <div class="innerCt">
-                                    <div class=" filter drop" data-link="list19">
-                                        <div class="btn-drop ">
-                                            <span class="">*</span>
-                                        </div>
-                                        <div class="list19 show-right list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <input type="text" name="" id="" value="">
-                                    <div class=" filter drop" data-link="list20">
-                                        <div class="btn-drop ">
-                                            <span class="icon-trigger"></span>
-                                        </div>
-                                        <div class="list20 list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table-header-panel resize">
-                                <div class="label">Ngày chính thức</div>
-                                <div class="innerCt">
-                                    <div class=" filter drop " data-link="list21">
-                                        <div class="btn-drop ">
-                                            <span class="">*</span>
-                                        </div>
-                                        <div class="list21 show-right list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <input type="text" name="" id="" value="">
-                                    <div class=" filter drop " data-link="list22">
-                                        <div class="btn-drop ">
-                                            <span class="icon-trigger"></span>
-                                        </div>
-                                        <div class="list22 list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table-header-panel resize">
-                                <div class="label">Loại hợp đồng</div>
-                                <div class="innerCt">
-                                    <div class=" filter drop " data-link="lists23">
-                                        <div class="btn-drop ">
-                                            <span class="">*</span>
-                                        </div>
-                                        <div class="lists23 show-right list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <input type="text" name="" id="" value="">
-                                    <div class=" filter drop" data-link="list24">
-                                        <div class="btn-drop ">
-                                            <span class="icon-trigger"></span>
-                                        </div>
-                                        <div class="list24 list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table-header-panel resize">
-                                <div class="label">Trạng thái</div>
-                                <div class="innerCt">
-                                    <div class=" filter drop " data-link="lists25">
-                                        <div class="btn-drop ">
-                                            <span class="">*</span>
-                                        </div>
-                                        <div class="lists25 show-right list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <input type="text" name="" id="" value="">
-                                    <div class=" filter drop" data-link="list26">
-                                        <div class="btn-drop ">
-                                            <span class="icon-trigger"></span>
-                                        </div>
-                                        <div class="list26 list-drop">
-                                            <ul>
-                                                <li>list1</li>
-                                                <li>list2</li>
-                                                <li>list3</li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
 
-                        <div class="table-info-panel">
-                            <div class="scroll">
 
-                                <table id="tableview-1092-record-106" class="x-grid-item x-grid-item-selected tableWide-wrapper">
+                        <div class="table-info-panel scr-vertical">
+
+                            @foreach (var item in Model)
+                            {
+                                <table id="@Html.DisplayFor(modelItem => item.MaNhanVien)" class="x-grid-item x-grid-item-selected tableWide-wrapper">
                                     <tbody>
-                                        @foreach (var item in Model)
-                                        {
 
-                                            <tr>
-                                                <td class="x-grid-row">
-                                                    <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.GioiTinh)</div>
-                                                </td>
-                                                <td class="x-grid-row">
-                                                    <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.NgaySinh)</div>
-                                                </td>
-                                                <td class="x-grid-row">
-                                                    <div class="x-grid-cell-0"> @Html.DisplayFor(modelItem => item.TrinhDoDaoTao)</div>
-                                                </td>
-                                                <td class="x-grid-row">
-                                                    <div class="x-grid-cell-0"> @Html.DisplayFor(modelItem => item.NoiDaoTao)</div>
-                                                </td>
-                                                <td class="x-grid-row">
-                                                    <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.ChuyenNganh)</div>
-                                                </td>
-                                                <td class="x-grid-row">
-                                                    <div class="x-grid-cell-0"> @Html.DisplayFor(modelItem => item.ViTriCongViec)</div>
-                                                </td>
-                                                <td class="x-grid-row">
-                                                    <div class="x-grid-cell-0"> @Html.DisplayFor(modelItem => item.DonViCongTac)</div>
-                                                </td>
-                                                <td class="x-grid-row">
-                                                    <div class="x-grid-cell-0"> @Html.DisplayFor(modelItem => item.NgayThuViec)</div>
-                                                </td>
-                                                <td class="x-grid-row">
-                                                    <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.NgayChinhThuc)</div>
-                                                </td>
-                                                <td class="x-grid-row">
-                                                    <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.LoaiHopDong)</div>
-                                                </td>
-                                                <td class="x-grid-row">
-                                                    <div class="x-grid-cell-0"> @Html.DisplayFor(modelItem => item.TrangThai)</div>
-                                                </td>
-                                            </tr>
-                                        }
+
+                                        <tr>
+                                            <td class="x-grid-row">
+                                                <div class="x-grid-cell-2">@Html.DisplayFor(modelItem => item.GioiTinh)</div>
+                                            </td>
+                                            <td class="x-grid-row">
+                                                <div class="x-grid-cell-3">@Html.DisplayFor(modelItem => item.NgaySinh)</div>
+                                            </td>
+                                            <td class="x-grid-row">
+                                                <div class="x-grid-cell-4"> @Html.DisplayFor(modelItem => item.TrinhDoDaoTao)</div>
+                                            </td>
+                                            <td class="x-grid-row">
+                                                <div class="x-grid-cell-5"> @Html.DisplayFor(modelItem => item.NoiDaoTao)</div>
+                                            </td>
+                                            <td class="x-grid-row">
+                                                <div class="x-grid-cell-6">@Html.DisplayFor(modelItem => item.ChuyenNganh)</div>
+                                            </td>
+                                            <td class="x-grid-row">
+                                                <div class="x-grid-cell-7"> @Html.DisplayFor(modelItem => item.ViTriCongViec)</div>
+                                            </td>
+                                            <td class="x-grid-row">
+                                                <div class="x-grid-cell-8"> @Html.DisplayFor(modelItem => item.DonViCongTac)</div>
+                                            </td>
+                                            <td class="x-grid-row">
+                                                <div class="x-grid-cell-9"> @Html.DisplayFor(modelItem => item.NgayThuViec)</div>
+                                            </td>
+                                            <td class="x-grid-row">
+                                                <div class="x-grid-cell-10">@Html.DisplayFor(modelItem => item.NgayChinhThuc)</div>
+                                            </td>
+                                            <td class="x-grid-row">
+                                                <div class="x-grid-cell-11">@Html.DisplayFor(modelItem => item.LoaiHopDong)</div>
+                                            </td>
+                                            <td class="x-grid-row">
+                                                <div class="x-grid-cell-12"> @Html.DisplayFor(modelItem => item.TrangThai)</div>
+                                            </td>
+                                        </tr>
+
 
                                     </tbody>
-                                </table>
-                            </div>
+                                </table>}
+
+
                         </div>
 
                     </div>
 
+
+
                 </div>
-
-
             </div>
 
-        </div>
 
 
-
-        <div class="trang-thai-container">
-            <span>Tổng số bản ghi</span>
-            <div class="icon-arr-down btn-resize"></div>
-        </div>
-    </div>
-    <!-- het up-container -->
-    <div class="down-container">
-        <div class="catolo">
-            <div class=" icon icon-pre"></div>
-            <div class=" icon list-catolo">
-                <ul>
-                    <li><a href="#" class="catolo-active">1.THÔNG TIN CHUNG</a></li>
-                    <li><a href="#">2.THÔNG TIN LIÊN HỆ</a></li>
-                    <li><a href="#">3.GIA ĐÌNH</a></li>
-                    <li><a href="#">4.HỢP ĐỒNG LAO ĐỘNG</a></li>
-                    <li><a href="#">5.QUÁ TRÌNH CÔNG TÁC</a></li>
-                    <li><a href="#">6.THU NHẬP THƯỜNG XUYÊN</a></li>
-                    <li><a href="#">7.KHẤU TRỪ THƯỜNG XUYÊN</a></li>
-                    <li><a href="#">8.LỊCH SỬ LƯƠNG</a></li>
-                    <li><a href="#">9.LƯƠNG</a></li>
-                    <li><a href="#">10.THUẾ</a></li>
-                    <li><a href="#">11.QUÁ TRÌNH ĐÓNG BẢO HIỂM</a></li>
-                    <li><a href="#">12.PHÚC LỢI</a></li>
-                    <li><a href="#">13.KHEN THƯỞNG</a></li>
-                    <li><a href="#">14.SỰ CỐ</a></li>
-                    <li><a href="#">15.ĐÁNH GIÁ</a></li>
-                    <li><a href="">16.QUÁ TRÌNH ĐÀO TẠO</a></li>
-                    <li><a href="">17.BẰNG CẤP</a></li>
-
-                    <li><a href="">18.CHỨNG CHỈ</a></li>
-                    <li><a href="">19.KINH NGHIỆM LÀM VIỆC</a></li>
-                    <li><a href="">20.KĨ NĂNG</a></li>
-                    <li><a href="">21.TIẾP NHẬN</a></li>
-                    <li><a href="">22.THÔI VIỆC</a></li>
-                    <li><a href="">23.TÀI SẢN</a></li>
-                    <li><a href="">24.NHÂN VIÊN ĐI CÔNG TÁC</a></li>
-                    <li><a href="">25.VAI TRÒ ĐẢM NHIỆM </a></li>
-                    <li><a href="">26.LỊCH SỬ TUYỂN DỤNG</a></li>
-                    <li><a href="">27.GIẤY TỜ CÓ THỜI HẠN</a></li>
-                    <li><a href="">28.TÀI LIỆU ĐÍNH KÈM</a></li>
-                    <li><a href="">29.LỊCH SỬ THAY ĐỔI</a></li>
-
-                </ul>
+            <div class="trang-thai-container">
+                <span>Tổng số bản ghi</span>
+                <div class="icon-arr-down btn-resize"></div>
             </div>
-            <div class="icon icon-next"></div>
-            <div class="icon icon-3cham"></div>
-            <div class="icon icon-setting16"></div>
         </div>
-        <div class="info-detail">
-            <div id="ms636722829687507952_ucEmployeeGeneralInfo_pnEmployeeGeneralInfo-innerCt"
-                 data-ref="innerCt" style="" role="presentation" class="x-autocontainer-innerCt">
-                <div class="">
-                    <div class="m-row">
-                        <div class="icon-avatar">
-                            <img src="/Content/Images/avatar.png" class="user-image" alt="ảnh nhân viên">
-                        </div>
-                        <div class="m-col left-infor flex">
-                            <div class="m-row">
+        <!-- het up-container -->
+        <div class="down-container">
+            <div class="catolo">
+                <div class=" icon icon-pre"></div>
+                <div class=" icon list-catolo">
+                    <ul>
+                        <li class=><a href="#" class="catolo-active">1.THÔNG TIN CHUNG</a></li>
+                        <li><a href="#">2.THÔNG TIN LIÊN HỆ</a></li>
+                        <li><a href="#">3.GIA ĐÌNH</a></li>
+                        <li><a href="#">4.HỢP ĐỒNG LAO ĐỘNG</a></li>
+                        <li><a href="#">5.QUÁ TRÌNH CÔNG TÁC</a></li>
+                        <li><a href="#">6.THU NHẬP THƯỜNG XUYÊN</a></li>
+                        <li><a href="#">7.KHẤU TRỪ THƯỜNG XUYÊN</a></li>
+                        <li><a href="#">8.LỊCH SỬ LƯƠNG</a></li>
+                        <li><a href="#">9.LƯƠNG</a></li>
+                        <li><a href="#">10.THUẾ</a></li>
+                        <li><a href="#">11.QUÁ TRÌNH ĐÓNG BẢO HIỂM</a></li>
+                        <li><a href="#">12.PHÚC LỢI</a></li>
+                        <li><a href="#">13.KHEN THƯỞNG</a></li>
+                        <li><a href="#">14.SỰ CỐ</a></li>
+                        <li><a href="#">15.ĐÁNH GIÁ</a></li>
+                        <li><a href="">16.QUÁ TRÌNH ĐÀO TẠO</a></li>
+                        <li><a href="">17.BẰNG CẤP</a></li>
 
-                                <div class="m-col label">Mã nhân viên</div>
-                                <div class="text" field="EmployeeCode">NVTCT00765</div>
+                        <li><a href="">18.CHỨNG CHỈ</a></li>
+                        <li><a href="">19.KINH NGHIỆM LÀM VIỆC</a></li>
+                        <li><a href="">20.KĨ NĂNG</a></li>
+                        <li><a href="">21.TIẾP NHẬN</a></li>
+                        <li><a href="">22.THÔI VIỆC</a></li>
+                        <li><a href="">23.TÀI SẢN</a></li>
+                        <li><a href="">24.NHÂN VIÊN ĐI CÔNG TÁC</a></li>
+                        <li><a href="">25.VAI TRÒ ĐẢM NHIỆM </a></li>
+                        <li><a href="">26.LỊCH SỬ TUYỂN DỤNG</a></li>
+                        <li><a href="">27.GIẤY TỜ CÓ THỜI HẠN</a></li>
+                        <li><a href="">28.TÀI LIỆU ĐÍNH KÈM</a></li>
+                        <li><a href="">29.LỊCH SỬ THAY ĐỔI</a></li>
+
+                    </ul>
+                </div>
+                <div class="icon icon-next"></div>
+                <div class="icon icon-3cham"></div>
+                <div class="icon icon-setting16"></div>
+            </div>
+            <div class="info-detail">
+                <div id="ms636722829687507952_ucEmployeeGeneralInfo_pnEmployeeGeneralInfo-innerCt"
+                     data-ref="innerCt" style="" role="presentation" class="x-autocontainer-innerCt">
+                    <div class="">
+                        <div class="m-row">
+                            <div class="icon-avatar">
+                                <img src="../Content/images/avatar.png" class="user-image" alt="ảnh nhân viên">
                             </div>
-                            <div class="m-row">
-                                <div class="m-col label">Họ và tên</div>
-                                <div class="text" field="FullName">Lê Thị Lê</div>
+                            <div class="m-col left-infor flex">
+                                <div class="m-row">
 
+                                    <div class="m-col label">Mã nhân viên</div>
+                                    <div class="text" field="EmployeeCode">NVTCT00765</div>
+                                </div>
+                                <div class="m-row">
+                                    <div class="m-col label">Họ và tên</div>
+                                    <div class="text" field="FullName">Lê Thị Lê</div>
+
+                                </div>
+                                <div class="m-row">
+                                    <div class="m-col label"> Giới tính </div>
+
+                                    <div class="text" field="Gender">Nữ</div>
+
+                                </div>
+                                <div class="m-row">
+                                    <div class="m-col label">     Ngày sinh </div>
+                                    <div class="text" field="BirthDate">21/08/1993</div>
+
+                                </div>
+                                <div class="m-row">
+                                    <div class="m-col label iDentifyNumber"> Số CMND/Thẻ căn cước           </div>
+                                    <div class="text iDentifyNumberValue" field="IdentifyNumber">1254552154</div>
+
+                                </div>
+                                <div class="m-row">
+                                    <div class="m-col label">Hộ chiếu</div>
+
+                                    <div class="text" field="PassportNumber"></div>
+
+                                </div>
                             </div>
-                            <div class="m-row">
-                                <div class="m-col label"> Giới tính </div>
+                            <div class="m-col right-infor flex">
+                                <div class="m-row">
+                                    <div class="m-col label">   Vị trí công việc     </div>
 
-                                <div class="text" field="Gender">Nữ</div>
+                                    <div class="text" field="JobPositionName">Nhân viên Hành chính</div>
 
-                            </div>
-                            <div class="m-row">
-                                <div class="m-col label">     Ngày sinh </div>
-                                <div class="text" field="BirthDate">21/08/1993</div>
+                                </div>
+                                <div class="m-row">
+                                    <div class="m-col label">      Đơn vị công tác   </div>
 
-                            </div>
-                            <div class="m-row">
-                                <div class="m-col label iDentifyNumber"> Số CMND/Thẻ căn cước           </div>
-                                <div class="text iDentifyNumberValue" field="IdentifyNumber">1254552154</div>
+                                    <div class="text" field="OrganizationUnitName">Công ty Cổ Phần MISA</div>
 
-                            </div>
-                            <div class="m-row">
-                                <div class="m-col label">Hộ chiếu</div>
+                                </div>
+                                <div class="m-row">
+                                    <div class="m-col label">Ngày thử việc       </div>
 
-                                <div class="text" field="PassportNumber"></div>
+                                    <div class="text" field="HireDate"></div>
 
-                            </div>
-                        </div>
-                        <div class="m-col right-infor flex">
-                            <div class="m-row">
-                                <div class="m-col label">   Vị trí công việc     </div>
-
-                                <div class="text" field="JobPositionName">Nhân viên Hành chính</div>
-
-                            </div>
-                            <div class="m-row">
-                                <div class="m-col label">      Đơn vị công tác   </div>
-
-                                <div class="text" field="OrganizationUnitName">Công ty Cổ Phần MISA</div>
-
-                            </div>
-                            <div class="m-row">
-                                <div class="m-col label">Ngày thử việc       </div>
-
-                                <div class="text" field="HireDate"></div>
-
-                            </div>
-                            <div class="m-row">
-                                <div class="m-col label"> Ngày chính thức</div>
-                                <div class="text" field="ReceiveDate"></div>
+                                </div>
+                                <div class="m-row">
+                                    <div class="m-col label"> Ngày chính thức</div>
+                                    <div class="text" field="ReceiveDate"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -764,9 +768,9 @@
             </div>
         </div>
     </div>
+
+
+
+    <!-- het body-container -->
 </div>
-
-<!-- het body-container -->
-
-
-
+<!-- het content-container -->
