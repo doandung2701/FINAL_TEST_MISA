@@ -13,22 +13,37 @@
             return 1;
         } else {
             var dataToSend = {
-                "MaNhanVien": $('#staff-code').val(),
-                "HoVaTen": $('#Fullname').val(),
-                "GioiTinh": $("#GioiTinh").val(),
-                "NgaySinh": $("#DateofBirth").val(),
-                "TrinhDoDaoTao": "DAI HOC",
-                "ViTriCongViec": $("#work-position").val(),
-                "DonViCongTac": $("#OrganizationUnit").val(),
-                "LoaiHopDong": "Chinh Thuc",
-                "TrangThai": "Dang lam"
+                "maNhanVien": $('#staff-code').val(),
+                "hoVaTen": $('#Fullname').val(),
+                "gioiTinh": $("#GioiTinh").val(),
+                "ngaySinh": $("#DateofBirth").val(),
+                "trinhDoDaoTao": "DAI HOC",
+                "viTriCongViec": $("#work-position").val(),
+                "donViCongTac": $("#OrganizationUnit").val(),
+                "loaiHopDong": "Chinh Thuc",
+                "trangThai": "Dang lam"
             };
             console.log(dataToSend);
             $.post("/api/EmployeesApi", dataToSend).done(function (data) {
+                var $detailDiv = $('.addEmployee');
+                url = $(this).data('url');
+                console.log(url);
+                $.get(url, function (data) {
+                    console.log(data);
 
+                    $detailDiv.replaceWith(data);
+                })
             })
         }
-
-
     });
+    $(".right-panel").scroll(function () {
+        console.log("ringt");
+        $(".left-panel")
+            .scrollTop($(".right-panel").scrollTop());
+    });
+    $(".left-panel").scroll(function () {
+        $(".left-panel")
+            .scrollTop($(".right-panel").scrollTop());
+    });
+
 });

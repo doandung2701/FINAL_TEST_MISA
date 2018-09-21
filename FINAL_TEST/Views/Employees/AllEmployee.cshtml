@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<FINAL_TEST.Models.Employee>
 <div class="content-container">
     <div class="list-top-container">
         <div class="panel-title">
@@ -41,7 +41,7 @@
         <hr />
         <!-- het panel-title  -->
         <div class="panel-tool">
-            <div class="tool-item btn-add" data-url='@Url.Action("AddEmployee","Employees" )'>
+            <div class="tool-item btn-add" data-url='@Url.Action("AddEmployee","Employees")'>
                 <span class="tool-icon icon-add16"></span>
                 <span class="text-tool">Thêm</span>
             </div>
@@ -201,17 +201,21 @@
                         <div class="table-info-panel">
                             <div class="scroll">
 
-                                <table id="tableview-1091-record-106" class="x-grid-item x-grid-item-selected">
+                                <table id="tableview-1091-record-106" class="x-grid-item x-grid-item-selected tableWide-wrapper">
                                     <tbody>
-                                        <tr class="  x-grid-row">
-                                            <td class="x-grid-td">
-                                                <div class="x-grid-cell-0">Bùi Như Nấm</div>
+                                        @foreach (var item in Model)
+                                        {
+                                        <tr>
+                                            <td class="  x-grid-row">
+                                                <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.MaNhanVien)</div>
                                             </td>
-
-                                            <td class="x-grid-td">
-                                                <div class="x-grid-cell-1">Bùi Như Nấm</div>
+                                            <td class="  x-grid-row">
+                                                <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.HoVaTen)</div>
                                             </td>
+                                            
                                         </tr>
+                                        }
+                                     
                                     </tbody>
                                 </table>
                             </div>
@@ -582,22 +586,48 @@
                         <div class="table-info-panel">
                             <div class="scroll">
 
-                                <table id="tableview-1091-record-106" class="x-grid-item x-grid-item-selected">
+                                <table id="tableview-1091-record-106" class="x-grid-item x-grid-item-selected tableScrollTop">
                                     <tbody>
-                                        <tr class="x-grid-row">
-                                            <td> <div class="x-grid-cell-1">Bùi Như Nấm</div></td>
-                                            <td> <div class="x-grid-cell-1">Bùi Như Nấm</div></td>
-                                            <td> <div class="x-grid-cell-1">Bùi Như Nấm</div></td>
-                                            <td> <div class="x-grid-cell-1">Bùi Như Nấm</div></td>
-                                            <td> <div class="x-grid-cell-1">Bùi Như Nấm</div></td>
-                                            <td> <div class="x-grid-cell-1">Bùi Như Nấm</div></td>
-                                            <td> <div class="x-grid-cell-1">Bùi Như Nấm</div></td>
-                                            <td> <div class="x-grid-cell-1">Bùi Như Nấm</div></td>
-                                            <td> <div class="x-grid-cell-1">Bùi Như Nấm</div></td>
-                                            <td> <div class="x-grid-cell-1">Bùi Như Nấm</div></td>
-                                            <td> <div class="x-grid-cell-1">Bùi Như Nấm</div></td>
-                                        </tr>
-                                    </tbody>
+                                        @foreach (var item in Model)
+                                        {
+
+                                            <tr class="x-grid-row">
+                                                <td class="x-grid-td">
+                                                    <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.GioiTinh)</div>
+                                                </td>
+                                                <td class="x-grid-td">
+                                                    <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.NgaySinh)</div>
+                                                </td>
+                                                <td class="x-grid-td">
+                                                    <div class="x-grid-cell-0"> @Html.DisplayFor(modelItem => item.TrinhDoDaoTao)</div>
+                                                </td>
+                                                <td class="x-grid-td">
+                                                    <div class="x-grid-cell-0"> @Html.DisplayFor(modelItem => item.NoiDaoTao)</div>
+                                                </td>
+                                                <td class="x-grid-td">
+                                                    <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.ChuyenNganh)</div>
+                                                </td>
+                                                <td class="x-grid-td">
+                                                    <div class="x-grid-cell-0"> @Html.DisplayFor(modelItem => item.ViTriCongViec)</div>
+                                                </td>
+                                                <td class="x-grid-td">
+                                                    <div class="x-grid-cell-0"> @Html.DisplayFor(modelItem => item.DonViCongTac)</div>
+                                                </td>
+                                                <td class="x-grid-td">
+                                                    <div class="x-grid-cell-0"> @Html.DisplayFor(modelItem => item.NgayThuViec)</div>
+                                                </td>
+                                                <td class="x-grid-td">
+                                                    <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.NgayChinhThuc)</div>
+                                                </td>
+                                                <td class="x-grid-td">
+                                                    <div class="x-grid-cell-0">@Html.DisplayFor(modelItem => item.LoaiHopDong)</div>
+                                                </td>
+                                                <td class="x-grid-td">
+                                                    <div class="x-grid-cell-0"> @Html.DisplayFor(modelItem => item.TrangThai)</div>
+                                                </td>
+                                            </tr>
+                                        }
+                                        </tbody>
                                 </table>
                             </div>
                         </div>
@@ -730,3 +760,8 @@
         </div>
     </div>
 </div>
+
+<!-- het body-container -->
+
+
+

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FINAL_TEST.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace FINAL_TEST.Controllers
 {
     public class EmployeesController : Controller
     {
+        private EmployeeModelEntities db = new EmployeeModelEntities();
         // GET: Employees
         public ActionResult Index()
         {
@@ -19,7 +21,7 @@ namespace FINAL_TEST.Controllers
         }
         public ActionResult AllEmployee()
         {
-            return PartialView("AllEmployee");
+            return PartialView(db.Employees);
         }
     }
 }

@@ -79,7 +79,7 @@ table {
 
 
 .column-panel {
-    \: flex;
+    width: 100%;
     display: inline-flex;
 }
 
@@ -226,7 +226,7 @@ span.icon-right {
     height: 16px;
     width: 16px;
     margin-left: 7px;
-    background: url('images/trigger.png') no-repeat;
+    background: url('/Content/Images/trigger.png') no-repeat;
     background-position-y: 6px;
 }
 
@@ -342,12 +342,11 @@ td {
 
 .right-panel {
     overflow: scroll;
-    /* position: absolute; */
-    /* top: 0px; */
-    /* right: 0; */
-    /* left: 29%; */
-    /* bottom: 0; */
-    /* height: 100%; */
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 30%;
+    bottom: 0;
 }
 
     .right-panel .table-info-panel {
@@ -358,6 +357,7 @@ td {
     height: auto;
     min-width: 50px !important;
     display: inline-block;
+    width: 100%;
 }
 
     .table-header-panel div {
@@ -377,11 +377,14 @@ td {
 
 
 .left-panel {
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    /* bottom: 0; */
-    /* overflow: hidden; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    width: 30%;
+    height: 95%;
 }
 
 
@@ -499,7 +502,7 @@ td {
 
         .down-container .catolo .list-catolo {
             overflow-x: scroll;
-            width: 1196px;
+            width: 1340px;
             height: 43px;
         }
 
@@ -604,4 +607,8 @@ table:nth-child(odd) {
 table:nth-child(even) {
     width: 100%;
     background: white;
+}
+
+.left-panel::-webkit-scrollbar {
+    display: none;
 }
