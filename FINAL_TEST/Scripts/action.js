@@ -23,7 +23,13 @@
                 "loaiHopDong": "Chinh Thuc",
                 "trangThai": "Dang lam"
             };
-            console.log(dataToSend);
+            //console.log(dataToSend);
+            //$.ajax({
+            //    method: 'POST',
+            //    url: '/api/EmployeesApi',
+            //    data: dataToSend,
+                
+            //});
             $.post("/api/EmployeesApi", dataToSend).done(function (data) {
                 var $detailDiv = $('.addEmployee');
                 url = $(this).data('url');
@@ -33,6 +39,8 @@
 
                     $detailDiv.replaceWith(data);
                 })
+            }).fail(function () {
+                alert("Co loi xay ra. De nghi kiem tra lai thong tin da nhap");
             })
         }
     });
